@@ -3,7 +3,23 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { motion } from 'framer-motion'
 
-const siteStructure = [
+interface SubLink {
+  name: string;
+  path: string;
+}
+
+interface SiteLink {
+  name: string;
+  path: string;
+  subLinks?: SubLink[];
+}
+
+interface SiteSection {
+  title: string;
+  links: SiteLink[];
+}
+
+const siteStructure: SiteSection[] = [
   {
     title: "Pages principales",
     links: [

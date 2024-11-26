@@ -1,5 +1,5 @@
 import * as React from "react";
-import { HeroText } from "./HeroText";
+import { HeroText } from "./Herotext";
 import { HeroImage } from "./HeroImage";
 
 export const RenovationHero: React.FC = () => {
